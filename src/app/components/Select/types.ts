@@ -1,4 +1,8 @@
+import { PartType } from "@/app/lib/parts/types";
+
+
 export type Props = {
-    options: {id: string, name: string}[];
+    options: PartType[];
     label: string;
+    onChange: (option:PartType ) => void;
 }

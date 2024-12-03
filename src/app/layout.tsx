@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-
 const dmSans = localFont({
   src: "./fonts/DMSans-VariableFont.ttf",
   variable: "--font-dm-sans",
@@ -21,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.variable}  antialiased bg-white`}
-      >
+      <body className={`${dmSans.variable}  antialiased bg-white`}>
         {children}
       </body>
     </html>
