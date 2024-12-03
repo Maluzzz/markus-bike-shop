@@ -7,7 +7,7 @@
     It is made using NextJS, Typescript and TailwindCSS.
     <br />
   </p>
-    <a href="https://markus-shop.vercel.app/">Live Demo 🚀</a>
+    <a href="https://markus-shop.vercel.app/">Live Demo 🚀</a> <a href="https://mlz-space.notion.site/Welcome-to-Famous-Markus-Bike-Shop-150694e6ae9380bca363ca58b50d3931">Dev Journey📓</a> 
 </div>
 
 
@@ -30,6 +30,8 @@ Nextjs  + React + Typescript + Tailwindcss
 💅🏻 [Clsx](https://www.npmjs.com/package/clsx) for tailwindcss
 
 📝 [React Hook Form](https://react-hook-form.com/) for form validation & context.
+
+
 
 
 
