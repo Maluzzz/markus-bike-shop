@@ -2,7 +2,7 @@ export const PARTS_BY_TYPE = [
     {
       id: "frame_type",
       name: "Frame Type",
-      form: "select" 
+      form: "cards" 
     },
     {
       id: "frame_finish",

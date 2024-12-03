@@ -80,6 +80,7 @@ export const PARTS = [
       color: "#0d12a1",
       description: "A cool blue rim color for a distinct style.",
       price: 20,
+      disabled: true,
     },
     {
       id: "72bc4f69-87ef-42f3-82b7-7e7f9c6c3b87",

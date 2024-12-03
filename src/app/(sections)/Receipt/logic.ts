@@ -52,5 +52,5 @@ export function useLogic() {
     0
   );
 
-  return { totalPrice, priceBreakDown };
+  return { totalPrice, priceBreakDown, hasNewPrice: priceBreakDown.some((part) => part.newPrice) };
 }

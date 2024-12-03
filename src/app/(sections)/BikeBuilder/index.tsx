@@ -7,7 +7,7 @@ import { PartByTypeType } from "@/app/lib/partTypes/types";
 import { Controller } from "react-hook-form";
 
 export default function BikeBuilder() {
-  const { control, handleSubmit, setValue, selectedParts, onSubmit, parts, partsByType } =
+  const { control, handleSubmit, setValue, selectedParts, onSubmit, parts, partsByType,disabledIds } =
     useLogic();
 
   const renderPartTypeForm = (partType: PartByTypeType) => {
@@ -20,6 +20,7 @@ export default function BikeBuilder() {
             render={({ field }) => (
               <Select
                 label=""
+                disableOptions={disabledIds}
                 onChange={field.onChange}
                 options={parts.filter((part) => part.part_type === partType.id)}
               />
@@ -34,6 +35,7 @@ export default function BikeBuilder() {
               <ColorPicker
                 key={part.id}
                 color={part.color ?? ""}
+                disabled={disabledIds.includes(part.id) || part.disabled}
                 onClick={() => setValue(`selections.${partType.id}`, part)}
                 isSelected={
                   selectedParts
@@ -47,12 +49,13 @@ export default function BikeBuilder() {
     
       case "cards":
         return (
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {parts.filter((part) => part.part_type === partType.id).map((part) => (
               <Card
                 key={part.id}
                 name={part.name}
                 onClick={() => setValue(`selections.${partType.id}`, part)}
+                disabled={disabledIds.includes(part.id) || part.disabled}
                 isSelected={
                   selectedParts
                     ? selectedParts[partType.id]?.id === part.id
