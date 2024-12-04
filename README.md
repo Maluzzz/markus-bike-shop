@@ -31,8 +31,34 @@ Nextjs  + React + Typescript + Tailwindcss
 
 📝 [React Hook Form](https://react-hook-form.com/) for form validation & context.
 
+## Getting Started
 
 
+1. Clone the repository
+```
+git clone https://github.com/Maluzzz/markus-bike-shop.git
+```
+2. Go to the frontend folder
+```
+cd markus-bike-shop
+```
+3. Install the modules
+
+```
+pnpm i
+```
+
+* You can use the app pointing to the production server as well
+
+4. Run the app
+```
+pnpm dev
+```
+Now It's working on locahost:3000 ✨
+
+### Lib folder
+Data Parsing in lib Folder
+The lib folder serves as the data parser for this project. However, the data fetching functionality has not been implemented yet. To retrieve the data, it needs to be connected to a backend, which could be any API, such as a custom API, Google Drive API, Airtable, or Contentful. Currently, the data is mocked for testing purposes, and integration with an actual backend is needed to pull real data.
 
 
 
